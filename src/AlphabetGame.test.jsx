@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import AlphabetGame from './AlphabetGame'; // Import your component
 
 
@@ -28,14 +29,21 @@ describe('AlphabetGame Component', () => {
         expect(input.value).toBe('a');
     });
 
-    test('Limits player input to one character', () => {
+    test('Limits player input to one character', async () => {
         render(<AlphabetGame />);
         const input = screen.getByRole('textbox');
-        expect(input).toBeEmptyDOMElement();
-        fireEvent.change(input, { target: { value: 'a' } });
+        await userEvent.click(input);
+        await userEvent.keyboard('a');
         expect(input.value).toBe('a');
-        fireEvent.change(input, { target: { value: 'ab' } }); // Try typing more than one character
-        expect(input.value).toBe('a'); // Should still only have one character
+
+        // Clear the input field
+        fireEvent.change(input, { target: { value: '' } });
+        expect(input.value).toBe('');
+
+        // Type multiple characters
+        await userEvent.click(input);
+        await userEvent.keyboard('bc');
+        expect(input.value).toBe('b');
     });
 
     test('Has a Check button', () => {
