@@ -1,0 +1,41 @@
+Requirement 1: App must render.
+Assumption 1: Rendering App should not cause any error.
+
+Requirement 2: App must have a title.
+Assumption 2: There must be an h1 element with text as "Alphabet Game".
+
+Requirement 3: Player should be able to see the question alphabet.
+Assumption 3: There must be a div element which displays the current alphabet.
+
+Requirement 4: Player should be able to type an answer.
+Assumption 4: There must be an input field and it must be empty in the beginning. When user types an alphabet, it must be displayed in the field.
+
+Requirement 5: Player should be able to type only one character.
+Assumption 5: The input field must accept only a single character.
+
+Requirement 6: Player should be able to check their answer.
+Assumption 6: There must be a Check button.
+
+Requirement 7: Player should know if their answer is correct.
+Assumption 7: After entering the correct answer and submitting, there must be a text saying Correct!.
+
+Requirement 8: Player should know if their answer is wrong.
+Assumption 8: After entering a wrong answer and submitting, there must be a text saying Incorrect. Try again!.
+
+Requirement 9: Player should be able to change their answer.
+Assumption 9: After entering a wrong answer and submitting, player must be able to delete the previous answer, enter a new one and submit again.
+
+Requirement 10: Correct answer should increase the score by 1.
+Assumption 10: After entering the correct answer and submitting, the score must be updated and it should be 1 more than the previous score.
+
+Requirement 11: Wrong answer should not change the score.
+Assumption 11: After entering a wrong answer and submitting, the score must remain the same.
+
+Requirement 12: Player should not be allowed to submit empty answer.
+Assumption 12: If the input field is empty, check button must be disabled.
+
+Requirement 13: After submitting correct answer, player should see a new question.
+Assumption 13: After entering the correct answer and submitting, the current letter must change after a brief delay.
+
+Requirement 14: When a new question is displayed, previous UI must be cleared.
+Assumption 14: After entering the correct answer and submitting, after a brief delay, Correct! text must be hidden and input field must be empty.
