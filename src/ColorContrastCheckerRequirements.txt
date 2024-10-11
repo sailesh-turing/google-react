@@ -1,0 +1,35 @@
+Requirement 1: App must render.
+Assumption 1: Rendering App should not cause any error.
+
+Requirement 2: App must have a title.
+Assumption 2: There must be an h1 element with text as "Color Contrast Checker".
+
+Requirement 3: User should be able to provide the hex code of foreground color.
+Assumption 3: There must be an input element with id "foreground-color".
+
+Requirement 4: User should be able to select foreground color through a color picker.
+Assumption 4: There must be a div element with id "foreground-color-picker". Select a random color from the picker, and the value in the input element must change.
+
+Requirement 5: User should be able to provide the hex code of background color.
+Assumption 5: There must be an input element with id "background-color".
+
+Requirement 6: User should be able to select background color through a color picker.
+Assumption 6: There must be a div element with id "background-color-picker". Select a random color from the picker, and the value in the input element must change.
+
+Requirement 7: User should be able to see a preview of the text with the selected colors.
+Assumption 7: There must be a text element with id "preview". It should contain some text, say "Lorem ipsum". The color of the text should be same as the selected foreground-color and the color of the background should be same as the selected background-color.
+
+Requirement 8: User should be able to see the contrast ratio of the selected colors.
+Assumption 8: There must be an element with text "Contrast Ratio".
+
+Requirement 9: User should be able to see the level of compliance of the selected colors.
+Assumption 9: There must be an element with text "WCAG compliance".
+
+Requirement 10: For contrast ratio less than 4.5:1, the compliance must be shown as "Fail".
+Assumption 10: Choose foreground and background colors such that the contrast ratio is less than 4.5:1. "Contrast Ratio" element should display the correct ratio. "WCAG compliance" text should contain "Fail".
+
+Requirement 11: For contrast ratio between than 4.5:1 and 7:1, the compliance must be shown as "AA".
+Assumption 11: Choose foreground and background colors such that the contrast ratio is between 4.5:1 and 7:1. "Contrast Ratio" element should display the correct ratio. "WCAG compliance" text should contain "AA".
+
+Requirement 12: For contrast ratio more than 7:1, the compliance must be shown as "AAA".
+Assumption 12: Choose foreground and background colors such that the contrast ratio is more than 7:1. "Contrast Ratio" element should display the correct ratio. "WCAG compliance" text should contain "AAA".
