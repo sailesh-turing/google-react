@@ -4,17 +4,17 @@ Assumption 1: Rendering App should not cause any error.
 Requirement 2: App must have a title.
 Assumption 2: There must be an h1 element with text as "Color Contrast Checker".
 
-Requirement 3: User should be able to provide the hex code of foreground color.
-Assumption 3: There must be an input element with id "foreground-color".
+Requirement 3: User should be able to select foreground color through a color picker.
+Assumption 3: There must be an element with id "foreground-color-picker".
 
-Requirement 4: User should be able to select foreground color through a color picker.
-Assumption 4: There must be a div element with id "foreground-color-picker". Select a random color from the picker, and the value in the input element must change.
+Requirement 4: User should be able to provide the hex code of foreground color.
+Assumption 4: There must be an input element within the "foreground-color-picker".
 
-Requirement 5: User should be able to provide the hex code of background color.
-Assumption 5: There must be an input element with id "background-color".
+Requirement 5: User should be able to select background color through a color picker.
+Assumption 5: There must be an element with id "background-color-picker".
 
-Requirement 6: User should be able to select background color through a color picker.
-Assumption 6: There must be a div element with id "background-color-picker". Select a random color from the picker, and the value in the input element must change.
+Requirement 6: User should be able to provide the hex code of background color.
+Assumption 6: There must be an input element within the "background-color-picker".
 
 Requirement 7: User should be able to see a preview of the text with the selected colors.
 Assumption 7: There must be a text element with id "preview". It should contain some text, say "Lorem ipsum". The color of the text should be same as the selected foreground-color and the color of the background should be same as the selected background-color.
