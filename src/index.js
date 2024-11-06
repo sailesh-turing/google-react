@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ModelA from './253824-localStorage/ModelA';
+import ModelB from './253824-localStorage/ModelB';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ModelA />
+    <ModelB />
   </React.StrictMode>
 );
 
